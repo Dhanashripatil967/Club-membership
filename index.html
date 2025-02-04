@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <img src="images/logo1.jpg" alt="CodeHub Logo" class="logo">
+            <h1>CodeHub</h1>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <a href="#events">Events</a>
+                <a href="#contests">Contests</a>
+                <a href="#tutorials">Tutorials</a>
+                <a href="#faq">FAQ</a>
+                <a href="#registration">Membership</a>
+                <button id="loginButton">Login</button>
+            </div>
+            <button id="menuToggle" class="hamburger-menu">&#9776;</button>
+        </nav>
+        <!--<button class="login-btn">Login</button>-->
+    </header>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+        <div class="slide" style="background-image: url('images/im2.jpg');">
+            <h2>WELCOME TO CODEHUB CODING CLUB</h2>
+        </div>
+        <div class="slide" style="background-image: url('images/im5.jpg');">
+            <h2> ENHANCE YOUR CODING SKILL WITH US</h2>
+        </div>
+        <div class="slide" style="background-image: url('images/im8.jpg');">
+            <h2>LEARN-CODE-COLLABRATE</h2>
+        </div>
+    </div>
+
+    <!-- Event Section -->
+    
+
+    <section id="events">
+        <h2>Upcoming Events</h2>
+        <div class="card">
+            <div class="card-item">
+                <img src="images/bg.jpg" alt="Orientation">
+                <h3>Hackathon 2024</h3>
+                <p>Join us for an exciting coding challenge. Prizes await the best coders!</p>
+                <button class="join-btn">Learn More</button>
+            </div>
+            <div class="card-item">
+                <img src="images/im3.jpg" alt="Orientation">
+                <h3>Web Development Workshop</h3>
+                <p>Learn the basics of web development in this hands-on session.</p>
+                <button class="join-btn">Register</button>
+            </div>
+            <div class="card-item">
+                <img src="images/im1.jpg" alt="Hackathon">
+                <h3>AI Bootcamp</h3>
+                <p>Dive into the world of AI with industry experts.</p>
+                <button class="join-btn">membership</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contests">
+        <h2>Contests</h2>
+        <div class="card">
+            <div class="card-item">
+                <img src="images/background.jpg" alt="Hackathon">
+                <h3>Bug Bounty</h3>
+                <p>Find and fix bugs in real-world projects to win exciting rewards.</p>
+                <button class="join-btn">Join</button>
+            </div>
+            <div class="card-item">
+                <img src="images/im6.jpg">
+                <h3>Code Sprint</h3>
+                <p>Compete in a 24-hour coding marathon with other coders.</p>
+                <button class="join-btn">Participate</button>
+            </div>
+            <div class="card-item">
+                <img src="images/im8.jpg">
+                <h3>UI Design Contest</h3>
+                <p>Show off your creativity in this design-focused competition.</p>
+                <button class="join-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tutorials">
+        <h2>Programming Tutorials</h2>
+        <div class="card">
+            <div class="card-item">
+                <img src="images/im9.jpg" alt="Hackathon">
+                <h3>Python Basics</h3>
+                <p>Learn Python programming from scratch.</p>
+                <a  href="https://youtu.be/UrsmFxEIp5k?si=7q2cUmogQB3sjq7G"  target="_blank">view tutorial</a>
+            </div>
+            <div class="card-item">
+                <img src="images/im4.jpg">
+                <h3>Web Development</h3>
+                <p>Master HTML, CSS, and JavaScript with hands-on projects.</p>
+                <a  href="https://youtube.com/playlist?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&si=hdyq_dg_qX16hS_J"  target="_blank">view tutorial</a>
+            </div>
+            <div class="card-item">
+                <img src="images/im7.jpg">
+                <h3>Data Structures</h3>
+                <p>Understand the core concepts of data structures and algorithms.</p>
+                <a  href="https://youtube.com/playlist?list=PLfqMhTWNBTe137I_EPQd34TsgV6IO55pt&si=6XixKIAZaeVT2qjz"  target="_blank">view tutorial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>FAQs</h2>
+        <div class="faq-item">
+            <button class="faq-question">How do I join the club?</button>
+            <div class="faq-answer">You can join by filling out the membership form below.</div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">Is there a membership fee?</button>
+            <div class="faq-answer">No, joining CodeHub is completely free!</div>
+            <div class="faq-item">
+                <button class="faq-question">What contests do you organize?</button>
+                <div class="faq-answer">We organize hackathons, coding marathons, and algorithm challenges regularly.</div>
+            </div>
+            
+            <div class="faq-item">
+                <button class="faq-question">How do I get notified?</button>
+                <div class="faq-answer">We notify members via email and our club's official social media channels.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="registration">
+        <h2>Membership Registration</h2>
+        <form id="membership-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="branch">Branch:</label>
+            <select id="branch" name="Branch" required>
+                <option value="computer Engineering">computer Engineering</option>
+                <option value="Electonics Engineering">Electonics Engineering</option>
+                <option value="Electrical Engineering">Electrical Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="civil Engineering">civil Engineering</option>
+                <option value="BCA">BCA</option>
+                </select>
+
+            <label for="year">Year:</label>
+            <select id="year" name="year" required>
+                <option value="first-year">1st year</option>
+                <option value="second-year">2nd year</option>
+                <option value="Third-year">3rd year</option>
+                <option value="Fourth-year">4th year</option>
+                </select>
+            
+            <label for="section">Section:</label>
+            <input type="text" id="section" name="section" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+        <p id="response"></p>
+    </section>
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form id="logiForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="button" id="loginSubmit">Login</button>
+        </form>
+        <p id="loginFeedback" style="color:red; margin-top:10px;"></p>
+    </div>
+</div>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 Code Hub | All Rights Reserved</p>
+        <div class="social-media-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30" />
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="30" height="30" />
+            </a>
+            
+        </div>
+    </div>
+</footer>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
